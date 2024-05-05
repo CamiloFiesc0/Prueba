@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:textSize="24sp"
+        android:layout_below="@+id/txttitulo"
+        android:inputType="number"/>
+
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textSize="24sp"
+        android:layout_below="@+id/id"
+        android:inputType="textPersonName"/>
+
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        android:textSize="24sp"
+        android:layout_below="@+id/nombre"
+        android:inputType="number"/>
+
+
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Direccion"
+        android:textSize="24sp"
+        android:layout_below="@+id/telefono"
+        android:inputType="textPostalAddress"/>
+
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:textSize="24sp"
+        android:layout_below="@+id/direccion"
+        android:inputType="textEmailAddress"/>
+
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:textSize="24sp"
+        android:layout_below="@+id/correo"
+        android:inputType="textPassword"/>
+
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:textSize="24sp"
+        android:layout_below="@+id/contraseña"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/btninsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="15dp"
+        android:text="Insertar"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btninsertar"
+        android:layout_marginTop="15dp"
+        android:text="Actualizar"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btneliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnactualizar"
+        android:layout_marginTop="15dp"
+        android:text="Eliminar"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btneliminar"
+        android:layout_marginTop="15dp"
+        android:text="Ver"
+        android:textSize="24dp" />
+
+
+</LinearLayout>
